@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+	<SurfaceView android:id="@+id/surfaceView1"
+		android:layout_height="fill_parent" android:layout_width="fill_parent"></SurfaceView>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:layout_gravity="bottom"
+		android:orientation="vertical">
+		<LinearLayout android:orientation="horizontal"
+			android:layout_gravity="center_horizontal" android:layout_marginTop="4.0dip"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/btnPlayUrl"
+				android:text="播放网络视频"></Button>
+			<Button android:layout_height="wrap_content" android:id="@+id/btnPause"
+				android:text="暂停" android:layout_width="80dip"></Button>
+			<Button android:layout_height="wrap_content"
+				android:layout_width="80dip" android:text="停止" android:id="@+id/btnStop"></Button>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="20dip">
+			<SeekBar android:paddingRight="10dip" android:layout_gravity="center_vertical"
+				android:paddingLeft="10dip" android:layout_weight="1.0"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:id="@+id/skbProgress" android:max="100"></SeekBar>
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>  
